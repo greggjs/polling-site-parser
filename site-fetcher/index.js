@@ -6,7 +6,7 @@ export const getSiteInfo = async (url) => {
   try {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.goto(url);
+    await page.goto(url, { waitUntil: "networkidle2" });
     const content = await page.content();
     return content;
   } catch (err) {
