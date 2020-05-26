@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "aws-sdk": "^2.684.0",
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "command-line-args": "^5.1.1",
+    "puppeteer": "^3.1.0"
+  }
+}
