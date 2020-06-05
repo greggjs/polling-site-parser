@@ -8,6 +8,7 @@ export const getSiteInfo = async (url) => {
     const page = await browser.newPage();
     await page.goto(url, { waitUntil: "networkidle2" });
     const content = await page.content();
+    browser.close();
     return content;
   } catch (err) {
     console.error(err);

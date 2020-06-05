@@ -21,7 +21,7 @@ const main = async (site, filter, updateTopic) => {
     }
   });
   data.forEach((elem) => {
-    const elemExists = data.find((e) => e.title && elem.title == e.title);
+    const elemExists = newData.find((e) => e.title && elem.title == e.title);
     if (!elemExists) {
       console.log(`change happened on ${site}, new element has disappeared: ${elem.title}`);
       updates.push({ title: elem.title, action: "REMOVED" })
