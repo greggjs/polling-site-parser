@@ -12,6 +12,9 @@ let data = [];
 
 const main = async (site, filter, updateTopic) => {
   const newData = await refreshSiteData(site, filter);
+  if (!newData || newData.length < 1) {
+    return;
+  }
   const updates = [];
   newData.forEach((elem) => {
     const elemExists = data.find((e) => e.title && elem.title == e.title);
