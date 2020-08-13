@@ -5,7 +5,7 @@
   "license": "GPL-3.0-or-later",
   "author": "Jake Gregg, the Walrus of Time",
   "description": "a script you can use to easily poll a website for a specific section, then publish to SNS if there's any difference.",
-  "scripts": { 
+  "scripts": {
     "start": "yarn -s && node index.js"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
     "command-line-args": "^5.1.1",
+    "console-stamp": "^0.2.9",
     "puppeteer": "^3.1.0"
   }
 }

@@ -1,6 +1,10 @@
 import commandLineArgs from "command-line-args";
 import { getSiteInfo, getSiteData } from "./site-fetcher/index.js";
 import { publishUpdates } from "./update-publisher/index.js";
+import consolestamp from "console-stamp";
+
+// override console to have timestamping
+consolestamp(console);
 
 const refreshSiteData = async (site, filter) => {
   const html = await getSiteInfo(site);
