@@ -2,7 +2,7 @@
   "name": "polling-site-parser",
   "type": "module",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "GPL-3.0-or-later",
   "author": "Jake Gregg, the Walrus of Time",
   "description": "a script you can use to easily poll a website for a specific section, then publish to SNS if there's any difference.",
