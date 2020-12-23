@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import commandLineArgs from "command-line-args";
 import { getSiteInfo, getSiteData } from "./site-fetcher/index.js";
 import { publishUpdates } from "./update-publisher/index.js";
